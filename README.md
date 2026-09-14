@@ -1,26 +1,85 @@
-## API Design with Node.js, v5 Course
+## API Design with Node.js, v5 - Course Project
 
-This is a companion repository for the [API Design with Node.js, v5](https://frontendmasters.com/courses/api-design-nodejs-v5) course on Frontend Masters.
+A comprehensive Node.js REST API project built while completing the [API Design with Node.js, v5](https://frontendmasters.com/courses/api-design-nodejs-v5) course on Frontend Masters. This project demonstrates core backend development concepts and best practices.
+
 [![Frontend Masters](https://static.frontendmasters.com/assets/brand/logos/full.png)](https://frontendmasters.com/courses/api-design-nodejs-v5)
 
-### Course Notes
+### 📚 Project Overview
 
-Click [here](https://api-design-with-node-v5.super.site/) to view the course notes on Notion.
+A full-featured REST API built with Node.js that demonstrates proper API design patterns, authentication, database integration, and middleware implementation. This is a portfolio project showcasing completion of professional-grade backend development training.
 
-### Setup Instructions
+### 🛠️ Tech Stack
+
+- **Runtime**: Node.js 23.6.0+
+- **Language**: TypeScript
+- **Framework**: Express.js
+- **Database**: PostgreSQL with Drizzle ORM
+- **Authentication**: JWT (JSON Web Tokens)
+- **Testing**: Vitest
+- **Routing**: RESTful API design
+
+### ✨ Key Features
+
+- ✅ User authentication system with JWT tokens
+- ✅ Password hashing and security best practices
+- ✅ Database schema with migrations
+- ✅ Input validation middleware
+- ✅ Authentication middleware
+- ✅ Habit tracking API (CRUD operations)
+- ✅ User management endpoints
+- ✅ Structured error handling
+- ✅ Environment configuration management
+
+### 📦 Installation & Setup
 
 ```bash
-# Node.js 23.6.0 or higher is required for this project
-git clone https://github.com/Hendrixer/api-design-node-v5.git
+# Node.js 23.6.0 or higher is required
+git clone https://github.com/sulzh/api-design-node-v5.git
 cd api-design-node-v5
-npm i
+
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env
+# Edit .env with your configuration
+
+# Run database migrations
+npm run db:migrate
+
+# Start the development server
+npm run dev
 ```
 
-### Branches
+### 📋 Available Scripts
 
-- `main` is the starter project for the course
-- `lesson-X` branches represent checkpoints for starting each section [in the notes](https://api-design-with-node-v5.super.site/). These are only helpful if you wanted to start at a specific section and are not following the course from the beginning.
-- `lesson-X-solution` branches contain the completed code for each section [in the notes](https://api-design-with-node-v5.super.site/). You can `git diff` these branches with the `lesson-X` branches to see what code changed in each section
-- `live-lesson-X` branches are the live coded (solution) branches Scott pushes at the end of each section. They are similar to the `lesson-X-solution` branches.
+- `npm run dev` - Start development server
+- `npm run build` - Build TypeScript
+- `npm run db:migrate` - Run database migrations
+- `npm run db:studio` - Open Drizzle Studio UI
+- `npm test` - Run tests with Vitest
 
-**Note:** The `live-lesson-X` branches are the best for debugging issues in your code since they match exactly what Scott codes during the course.
+### 🌿 Branch Structure
+
+- **`main`** - Production-ready code (stable version)
+- **`development`** - Active development branch
+- `lesson-X` - Course checkpoints for reference
+- `lesson-X-solution` - Course solutions for comparison
+- `live-lesson-X` - Live-coded solutions from course sessions
+
+### 📚 Learning Outcomes
+
+This project demonstrates proficiency in:
+- RESTful API architecture and best practices
+- TypeScript for type-safe backend development
+- Database design and ORM usage
+- Authentication and security implementation
+- Middleware patterns and request handling
+- Error handling and validation
+- Environment-based configuration
+- Database migrations and schema management
+
+### 📖 Course Resources
+
+- [Course Notes](https://api-design-with-node-v5.super.site/)
+- [Frontend Masters Course](https://frontendmasters.com/courses/api-design-nodejs-v5)
